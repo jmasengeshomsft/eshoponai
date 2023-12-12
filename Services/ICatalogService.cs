@@ -6,8 +6,8 @@ namespace EshopOnAI.ProductGenerator.Services
 {
     public interface ICatalogService
     {
-        Task<List<CatalogBrand>> GetProjectsAsync(List<Root> data);
-        Task<List<CatalogType>> GetCatalogTypesAsync(List<Root> data);
-        Task<List<CatalogItem>> GetCatalogItemsAsync(List<Root> data);
+        Task<List<CatalogBrand>> GetProjectsAsync(List<Suggestion> data);
+        Task<List<CatalogType>> GetCatalogTypesAsync(List<Suggestion> data);
+        Task<List<CatalogItem>> GetCatalogItemsAsync(List<Suggestion> data);
     }
 }

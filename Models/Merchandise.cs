@@ -18,6 +18,11 @@ namespace EshopOnAI.ProductGenerator.Models
 
     public class Root
     {
+        public List<Suggestion> suggestions { get; set; }
+    }
+
+    public class Suggestion
+    {
         public int id { get; set; }
         public string name { get; set; }
         public List<Merchandise> merchandises { get; set; }
